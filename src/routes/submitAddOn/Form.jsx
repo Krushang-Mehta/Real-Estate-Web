@@ -1,4 +1,3 @@
-
 export default function BookForm({ onClose }) {
   return (
     <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 px-2">
@@ -19,7 +18,14 @@ export default function BookForm({ onClose }) {
 
           <input className="border p-2 rounded w-full text-sm sm:text-base" placeholder="Author Name" />
 
-          <input className="border p-2 rounded w-full text-sm sm:text-base" placeholder="Category" />
+          {/* <input className="border p-2 rounded w-full text-sm sm:text-base" placeholder="Category" /> */}
+          <select className="border p-2 w-full">
+            <option value="">Select Category</option>
+            <option>Finance</option>
+            <option>History</option>
+            <option>Fiction</option>
+            <option>Personality</option>
+          </select>
 
           <button type="button" className="bg-blue-500 text-white w-full py-2 rounded hover:bg-blue-600 text-sm sm:text-base">
             Add Book
@@ -31,4 +37,3 @@ export default function BookForm({ onClose }) {
     </div>
   );
 }
-
