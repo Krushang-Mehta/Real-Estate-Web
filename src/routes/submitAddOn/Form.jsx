@@ -18,7 +18,6 @@ export default function BookForm({ onClose }) {
 
           <input className="border p-2 rounded w-full text-sm sm:text-base" placeholder="Author Name" />
 
-          {/* <input className="border p-2 rounded w-full text-sm sm:text-base" placeholder="Category" /> */}
           <select className="border p-2 w-full">
             <option value="">Select Category</option>
             <option>Finance</option>
